@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>WORDLE</h1>
+      <h1>WORDLE</h1>
+      <h2><span id="left"></span> Word(s) remaining!</h2>
     </header>
     <main>
-        <section id="letter-boxes">
-            <section id="first-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
-            <section id="second-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
-            <section id="third-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
-            <section id="fourth-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
-            <section id="fifth-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
-            <section id="sixth-guess">
-                <div class="letter-box letter-space-1"></div>
-                <div class="letter-box letter-space-2"></div>
-                <div class="letter-box letter-space-3"></div>
-                <div class="letter-box letter-space-4"></div>
-                <div class="letter-box letter-space-5"></div>
-            </section>
+      <section id="letter-boxes">
+        <section id="guess-1">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
         </section>
-        <section id="keyboard">
-            <section id="first-row"></section>
-            <section id="second-row"></section>
-            <section id="third-row"></section>
+        <section id="guess-2">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
         </section>
+        <section id="guess-3">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
+        </section>
+        <section id="guess-4">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
+        </section>
+        <section id="guess-5">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
+        </section>
+        <section id="guess-6">
+          <div class="letter-box letter-space-1"></div>
+          <div class="letter-box letter-space-2"></div>
+          <div class="letter-box letter-space-3"></div>
+          <div class="letter-box letter-space-4"></div>
+          <div class="letter-box letter-space-5"></div>
+        </section>
+      </section>
+      <section id="keyboard">
+        <section id="first-row"></section>
+        <section id="second-row"></section>
+        <section id="third-row"></section>
+      </section>
     </main>
     <footer></footer>
+    <script src="words.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

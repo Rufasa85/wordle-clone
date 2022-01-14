@@ -24,11 +24,14 @@ header {
   justify-content: center;
 }
 .letter-box {
-  width: 4em;
-  height: 4em;
+  width: 2em;
+  height: 2em;
   border: 1px solid gray;
   margin: 5px;
-  font-size: 1em;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #keyboard {
@@ -49,6 +52,24 @@ header {
   border-radius: 5px;
   color:white;
 }
+
+.in-word {
+    background:goldenrod;
+}
+
+.in-spot {
+    background:green;
+}
+
+.wrong {
+    background: gray
+}
+
+.wrong-keyboard {
+    background: darkslategray;
+    opacity: 0.5;
+}
+
 
 #third-row > :first-child, #third-row > :last-child {
     width:8em;
