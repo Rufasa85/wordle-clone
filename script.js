@@ -112,8 +112,15 @@ function deleteLetter(){
     currentGuess.pop();
 }
 
-function checkGuess(){
+async function checkGuess(){
     let solutionCopy = [...currentWord];
+    console.log(currentGuess.join(""))
+  
+        const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${currentGuess.join("")}`)
+        if(!res.ok){
+            alert("invalid word");
+            return;
+        }
     const objArr = currentGuess.map(letter=>({letter,inWord:false,inSpot:false}))
     //checking correct spots first
     for (let i = 0; i < solutionCopy.length; i++) {
