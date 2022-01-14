@@ -74,3 +74,9 @@ header {
 #third-row > :first-child, #third-row > :last-child {
     width:8em;
 }
+
+@media screen and (max-width:600px){
+    main{
+        width:80vw;
+    }
+}
